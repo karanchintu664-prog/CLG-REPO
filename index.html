@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Simple Static Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="login-page">
+
+    <div class="login-card">
+        <div class="card-header">
+            <div class="logo-circle">🎓</div>
+            <h2>Student Portal</h2>
+            <p>Simple static login page for college work</p>
+        </div>
+
+        <!-- Static Form: Directs natively to welcome.html without complicated JS -->
+        <form action="welcome.html" method="get">
+            <div class="form-group">
+                <label for="username">Username / Student ID</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Sign In</button>
+        </form>
+
+        <div class="card-footer">
+            <p>💡 Tip: Enter any name & password, then click <strong>Sign In</strong> to open the landing page.</p>
+        </div>
+    </div>
+
+</body>
+</html>
